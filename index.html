@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user loginBx">
+                <div class="imgBx">
+                    <img src="images/login.jpg" width="300" height="500">
+                </div>
+                <div class="formBx">
+                    <form action="">
+                        <h2>Login</h2>
+                        <input type="email" name="" placeholder="Email Address" required>
+                        <input type="password" name="" placeholder="Password" required>
+                        <input type="submit" name="" value="Login">
+                        <p class="login">Don't have an account?  <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+            <!--------------------------------------->
+            <div class="user regisBx">
+                <div class="formBx">
+                    <form action="">
+                        <h2>Create an Account</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="email" name="" placeholder="Email Address" required>
+                        <input type="password" name="" placeholder="Create Password" required>
+                        <input type="password" name="" placeholder="Confirm Password" required>
+                        <input type="submit" name="" value="Sign Up">
+                        <p class="login">Already have an account?  <a href="#" onclick="toggleForm();">Sign In</a></p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <img src="images/regi.jpg" width="300" height="500">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleForm() {
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
